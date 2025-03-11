@@ -17,8 +17,8 @@ const CenterS1 = () => {
         }).from(".image", {
             opacity: 0,
             x: 40,
-            duration: 0.8
-        });
+            duration: 0.6
+        },"-=1.5");
 
         // Start CenterS1 animation after navbar animation completes
         navTimeline.then(() => {
