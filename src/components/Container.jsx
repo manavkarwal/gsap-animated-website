@@ -48,7 +48,7 @@ const Container = () => {
                 scroller: "body",
                 start: "top 100%",
                 end: "top 35%",
-                markers: true,
+                // markers: true,
                 scrub: 1
             }
         })
@@ -61,7 +61,7 @@ const Container = () => {
                 scroller: "body",
                 start: "top 100%",
                 end: "top 35%",
-                markers: true,
+                // markers: true,
                 scrub: 1
             }
         })
