@@ -7,6 +7,7 @@ const centerTimeline = gsap.timeline({ paused: true });
 
 const CenterS1 = () => {
     const part1Ref = useRef(null)
+    const imageRef = useRef(null)
 
     useGSAP(() => {
         centerTimeline.from(part1Ref.current.children, {
@@ -14,7 +15,7 @@ const CenterS1 = () => {
             x: -40,
             duration: 0.9,
             stagger: 0.35
-        }).from(".image", {
+        }).from(imageRef.current, {
             opacity: 0,
             x: 40,
             duration: 0.6
@@ -24,7 +25,7 @@ const CenterS1 = () => {
         navTimeline.then(() => {
             centerTimeline.play();
         });
-    }, []);
+    });
 
     return (
 
@@ -38,7 +39,7 @@ const CenterS1 = () => {
                 <button className=' bg-black text-white p-3 font-mono rounded-lg'>Book a consultance</button>
             </div>
             <div className=' h-[100%] flex items-center justify-end w-[60%] '>
-                <img className='image h-[400px]' src="https://sweetp-user-uploads.s3.eu-west-2.amazonaws.com/stage/1951/pages/19022/Illustration.png" alt="" />
+                <img ref={imageRef} className=' h-[400px]' src="https://sweetp-user-uploads.s3.eu-west-2.amazonaws.com/stage/1951/pages/19022/Illustration.png" alt="" />
             </div>
         </div>
     )

@@ -4,8 +4,10 @@ import CenterS1 from '../components/CenterS1'
 import Section1Bottom from '../components/Section1Bottom'
 
 const Section1 = () => {
+    
+
     return (
-        <div className='reletive h-[100vh]'>
+        <div className='relative h-[100vh]'>
             <Navbar />
             <CenterS1 />
             <Section1Bottom/>
