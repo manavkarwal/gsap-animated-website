@@ -21,7 +21,7 @@ const Section1Bottom = () => {
   });
 
   return (
-    <div ref={botRef}  className='flex items-center mt-10 justify-between px-28  '>
+    <div ref={botRef}  className='md:flex grid  md:mx-0 mx-3 grid-cols-3 items-center mt-10 justify-between md:px-28  '>
       <img className='h-14 mt-4' src="https://static.vecteezy.com/system/resources/previews/014/018/563/non_2x/amazon-logo-on-transparent-background-free-vector.jpg" alt="" />
       <img className='h-18 ' src="https://logos-world.net/wp-content/uploads/2023/09/Dribbble-Logo-2009.png" alt="" />
       <img className='h-22 ' src="https://www.logo.wine/a/logo/HubSpot/HubSpot-Logo.wine.svg" alt="" />
